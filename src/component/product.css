@@ -1,0 +1,111 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+.products__item{
+    height: -moz-fit-content;
+    height: fit-content;
+}
+.image-container,.image-container-active{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    padding: 1px;
+}
+.image,img{
+    width: 100%;
+    height: 100%;
+}
+.image-container-active{
+    border: 2px solid hsl(14, 86%, 42%);
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+button{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.buttons{
+     position: absolute;
+    bottom: -17px;
+    height: 35px;
+    width: 70%;
+    z-index: 2;
+    margin: auto;
+    left: 0;
+    right: 0;
+    transform: translate(-50% 50%);
+    border-radius: 20px;
+}
+.add_to_cart, .control_btn{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: hsl(20, 50%, 98%);
+    color:hsl(14, 65%, 9%) ;
+    border: 1px solid hsl(14, 65%, 9%) ;
+    font-size: .5rem;
+}
+.control_btn{
+    padding: 10px;
+}
+.cart-svg{
+    width: 20px;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    margin: 0;
+}
+.add_to_cart:hover{
+    background-color: hsl(13, 31%, 94%);
+}
+.control_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(14, 86%, 42%);
+    color: hsl(20, 50%, 98%);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left;
+    border: 0;
+    font-weight: 700;
+    font-size: .7rem;
+}
+.product__details{
+    margin-top:20px ;
+    font-size: .6rem;
+}
+.productCategory{
+    color: hsl(7, 20%, 60%);
+    margin-bottom: 5px;
+}
+.productName{
+    color: hsl(14, 65%, 9%);
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: .6rem;
+}
+.productPrice{
+    color: hsl(14, 86%, 42%);
+}
+@media screen and (max-width:635px) {
+    .products__item{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    
+}

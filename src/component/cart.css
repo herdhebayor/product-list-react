@@ -1,0 +1,137 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.cart__container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 30%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color:hsl(20, 50%, 98%) ;
+    padding:15px;
+}
+.cart{
+    height: inherit;
+    width: 100%;
+}
+.cart_header{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(14, 86%, 42%);
+}
+.cart_footer{
+    width: 100%;
+    height: fit-content;
+}
+.total__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: .7rem;
+    margin: 10px 0;
+    transform: translateX(1);
+    transform-origin: top;
+    transition: .1s ease;
+}
+.cartTotal{
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(14, 65%, 9%) ;
+}
+.cart_footer_write_up{
+    width: 100%;
+    background-color: hsl(13, 31%, 94%);
+    border-radius: 5px;
+    font-size: .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.check_out_btn{
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    color: hsl(20, 50%, 98%);
+    background-color: hsl(14, 86%, 42%);
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.check_out_btn:hover{
+    background-color: hsl(14, 86%, 34%);   
+}
+.empty__cart{
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 5px;
+}
+.empty__cart p{
+    font-size: .7rem;
+    margin-top: 10px;
+}
+.cart__items{
+    width: 100%;
+}
+.cart__product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(13, 31%, 94%);
+    padding: 5px 0;
+    margin: 5px 0;
+}
+.itemPricing{
+    display: flex;
+    gap: 5px;
+    font-size: .7rem;
+    margin-top: 5px;
+    color: hsl(12, 20%, 44%);
+}
+.itemCount{
+    color: hsl(14, 86%, 42%);
+}
+.itemName{
+    font-weight: 700;
+    color: hsl(14, 65%, 9%);
+    font-size: .7rem;
+}
+.del{
+    outline: 0;
+    border: 1px solid hsl(14, 25%, 72%);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color:hsl(13, 31%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+}
+.del:hover{
+    background-color: hsl(20, 50%, 98%);
+}
+span{
+    margin: 3px;
+}
+@media screen and (max-width:850px) {
+    .cart__container{
+        width: 40%;
+    }
+    
+}
+@media screen and (max-width:635px){
+    .cart__container{
+        width: 100%;
+    }
+}
+

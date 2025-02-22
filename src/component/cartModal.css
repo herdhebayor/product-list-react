@@ -1,0 +1,116 @@
+
+.modal_wrapper{
+    position: fixed;
+    background-color: hsl(14 3% 85% / 0.3);
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    padding: 10px;
+}
+.cartModal{
+    width: 300px;
+    max-width: 80vh;
+    overflow-y: scroll;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: hsl(20, 50%, 98%);
+    margin: auto;
+}
+
+.header{
+    color: hsl(14, 65%, 9%);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.confirmSvg{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orderText{
+    font-size: .5rem;
+    color: hsl(12, 20%, 44%);
+    margin: 5px 0;
+}
+.cartModalInner{
+    background-color: hsl(13, 31%, 94%);
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.cartModalFooterTotal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: .6rem;margin-top: 10px;
+}
+.modal-total{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.cartModalItem, .cartModalItemDetails{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.cartModalItem{
+    padding: 5px 0;
+    height: 50px;
+    border-bottom: 1px solid hsl(14, 25%, 72%);
+    gap: 10px;
+}
+.image-thumbnail{
+    width: 40px;
+    height: 100%;
+    border-radius: 2px;
+}
+.cartModalItemDetails{
+    font-size: .7rem;
+    color: hsl(14, 65%, 9%);
+    justify-content: space-between;
+}
+.startNewOrder{
+    width: 100%;
+    height: 35px;
+    background-color: hsl(14, 86%, 42%);
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    color: hsl(20, 50%, 98%);
+    margin-top: 20px;
+}
+.startNewOrder:hover{
+    background-color: hsl(14, 86%, 35%);
+    }
+    .modalCount{
+        color: hsl(14, 86%, 42%);
+    }
+    .modalPrice{
+        color: hsl(12, 20%, 44%);
+    }
+    .modalName{
+        color: hsl(14, 65%, 9%);
+    }
+
+    @media screen and (max-width:375px) {
+        .cartModal{
+            width: 100%;
+        }
+        .modal_wrapper{
+            padding: 10px;
+        } 
+    }
